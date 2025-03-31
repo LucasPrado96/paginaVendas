@@ -87,19 +87,17 @@ export default function About() {
           </div>
 
           <div className="texto">
-            <h3>Módulo 4: Construção de Riqueza</h3>
+            <h3>Bônus Exclusivo:</h3>
 
             <ul>
               <li>
-                Como criar múltiplas fontes de renda e alcançar a liberdade
-                financeira.
+              Planilha de Controle Financeiro Profissional para você organizar seu dinheiro de forma automática.
               </li>
               <li>
-                Estratégias de longo prazo para você construir patrimônio e
-                viver de renda.
+              Acesso ao Grupo VIP no WhatsApp para tirar dúvidas e trocar experiências.
               </li>
               <li>
-                Como planejar sua aposentadoria sem depender do governo.
+              Acesso Vitalício - Com atualizações gratuitas para sempre!
               </li>
             </ul>
           </div>

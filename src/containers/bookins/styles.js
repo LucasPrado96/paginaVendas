@@ -1,23 +1,19 @@
-import Styled from 'styled-components';
-import { colorsTheme } from '../../constants';
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import Bg2 from "../../assets/bg2.jpg";
+import Styled from "styled-components";
+import { colorsTheme } from "../../constants";
 
+export const Container = Styled.div`
+width: 100vw;
 
-export const Container = Styled.div``;
-
-
+`;
 
 export const SectionBook = Styled.section`
-background-image: url(${Bg2});
-background-position: center;
-background-size: cover;
+background-color: ${colorsTheme.black};
 width: 100%;
-height: 100vh;
-padding: 15px;
+padding: 50px;
+
 display: flex;
 flex-direction: column;
-align-items: start;
+align-items: center;
 
 
 @media (max-width: 375px){
@@ -68,199 +64,40 @@ align-items: start;
         width: 100%;
     }
 
-`;
 
-
-export const ContentHorarios = Styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-
-@media (max-width: 680px){
-    width: 90%;
-    font-size: 30px;
-    text-align: center;
-    
-
-   
-    }
-
-
-
-.textContent{
-
-h1{
-    font-size: 48px;
-    font-weight: 400;
-    font-family: "Delius Unicase", serif;
-    color: ${colorsTheme.fontPrimaria};
-    margin-left: 20px;
-
-    @media (max-width: 680px){
-        width: 100%;
-        font-size: 30px;
-        text-align: center;
-        margin-left: 0;
-        }
-
-    @media (max-width: 375px){
-        width: 100%;
-        font-size: 30px;
-        text-align: center;
-        margin-left: 0;
-    }
-
-
-
- }
-}
-
-.table{
-   margin-top: 45px;
-
-
-   
-
-    ul{
-        list-style: none;
-        width: 100%;
-        gap: 15px;
-        display: flex;
-        flex-direction: column;
+    button{
+        padding: 35px;
+        border-radius: 10px;
+        border: none;   
         
-    }
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        background: rgb(184,182,215);
+        background: linear-gradient(180deg, rgba(184,182,215,1) 0%, rgba(170,37,246,1) 0%, rgba(171,45,244,1) 39%, rgba(79,0,255,1) 94%, rgba(34,0,255,1) 100%);
 
-    li{
-        font-size: 25px;
         color: ${colorsTheme.fontPrimaria};
-        display: flex;
-        justify-content: space-between;
-        gap: 120px;
-        border-bottom: 1px dotted;
-        color: ${colorsTheme.black};
-
-        strong{
-            @media (max-width: 375px){
-          font-size: 18px;
-            }
-        }
-    }
-}
-
-.cta{
-
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-
-    @media (max-width: 680px){
-       align-items: center;
+        font-size: 28px;
     }
 
-    @media (max-width: 375px){
-       align-items: center;
+    &:hover button{
+        filter: brightness(1.3);
+        box-shadow: 0 0 15px rgba(98, 35, 245, 0.8);
+        transition: 0.3s ease;
     }
 
+    &:active button{
+        background: rgb(184,182,215);
+        background: linear-gradient(180deg, rgba(184,182,215,1) 0%, rgba(170,37,246,1) 0%, rgba(171,45,244,1) 39%, rgba(79,0,255,1) 94%, rgba(34,0,255,1) 100%);
+        transition: all 0.3s ease;
+        transform: scale(0.95);
+    }
 
 
     p{
         color: ${colorsTheme.fontPrimaria};
-
-
-        @media (max-width: 680px){
-        width: 90%;
-        font-size: 16px;
-        text-align: center;
-        margin-left: 0;
-        }
-
-        @media (max-width: 375px){
-            width: 90%;
-            font-size: 16px;
-            text-align: center;
-            margin-left: 0;
-            }
-
-            @media (max-width: 414px){
-            width: 90%;
-            font-size: 25px;
-            text-align: center;
-            margin-left: 0;
-            margin-top: 50px;
-            }
-
-            @media (max-width: 430px){
-            width: 90%;
-            font-size: 25px;
-            text-align: center;
-            margin-left: 0;
-            margin-top: 50px;
-            }
-
-            @media (max-width: 768px){
-            width: 90%;
-            font-size: 25px;
-            text-align: center;
-            margin-left: 0;
-            margin-top: 50px;
-            }
-
-            @media (max-width: 820px){
-            width: 90%;
-            font-size: 25px;
-            text-align: center;
-            margin-left: 0;
-            margin-top: 50px;
-            }
-
-            @media (max-width: 1024px){
-            width: 90%;
-            font-size: 20px;
-            text-align: center;
-            margin-left: 0;
-            
-            }
-        }
-
-    a{
-            font-size: 20px;
-            text-decoration: none;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: ${colorsTheme.fontPrimaria};
-            font-weight: 500;
-            margin-top: 15px;
-
-            @media (max-width: 680px){
-                width: 90%;
-                font-size: 16px;
-                text-align: center;
-                margin-left: 0;
-            }
-
-        @media (max-width: 375px){
-            width: 90%;
-            font-size: 16px;
-            text-align: center;
-            margin-left: 0;
-            }
-        }
-            
-           
-
-            &:hover{
-                opacity: 0.5;
-                color: ${colorsTheme.contrasteAmarelo};
-            }
+        font-size: 15px;
+        margin-top: 10px;
     }
 
-
-`;
-
-export const WhatsAppIconStyled = Styled(WhatsAppIcon)`
-cursor: pointer;
-color: #25D366;
 `;
