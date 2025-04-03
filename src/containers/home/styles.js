@@ -1,5 +1,5 @@
 import Styled from "styled-components";
-
+import Bg from "../../assets/bgpredio.jpg";
 import { colorsTheme } from "../../constants";
 import PlayCircleFilledWhiteIcon from "@mui/icons-material/PlayCircleFilledWhite";
 
@@ -11,12 +11,13 @@ height: 100vh;
 scroll-behavior: smooth;
 overflow-x: hidden;
 
+
 `;
 
 export const Main = Styled.main`
 width: 100%;
 height: 100vh;
-
+background-image: url(${Bg});
 background-position: center;
 background-color: black;
 background-size: cover;
@@ -121,7 +122,7 @@ export const PlayCircleStyled = Styled(PlayCircleFilledWhiteIcon)`
 export const H1 = Styled.h1`
 font-size: 40px;
 font-weight: 400;
-font-family: "Delius Unicase", serif;
+font-family: "Bebas Neue", sans-serif;
 color: ${colorsTheme.fontPrimaria};
 text-align: center;
 padding: 10px;

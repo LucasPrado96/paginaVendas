@@ -9,10 +9,10 @@ import {
   
 } from "./styles";
 
-import ServicesBox from "../services/index";
+import SectionTestimony from "../testimony/index";
 import About from "../about/index";
-import Bookings from "../bookins/index";
-import Contact from "../contact/index";
+
+
 
 export function Home() {
   return (
@@ -28,7 +28,7 @@ export function Home() {
      
 
         <div className="prevEstrutura">
-          <a>CONHEÇA MEU TRABALHO</a>
+         
           <iframe width='840' height='420' 
           src="https://www.youtube.com/embed/Ep65y-eQxgE" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -39,10 +39,10 @@ export function Home() {
         </div>
       </Main>
 
-      <ServicesBox></ServicesBox>
+      <SectionTestimony></SectionTestimony>
       <About></About>
-      <Bookings></Bookings>
-      <Contact></Contact>
+      
+    
 
      
     </Container>

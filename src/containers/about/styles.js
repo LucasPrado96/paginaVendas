@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 import { colorsTheme } from '../../constants';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import LocationOnIcon from "@mui/icons-material/LocationOn";
+
+import Bg from '../../assets/caderno.jpg';
 
 
 export const Container = Styled.div`
@@ -11,6 +11,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+background-image: url(${Bg});
+padding: 30px;
 
 p{
         font-size: 15px;
@@ -37,7 +39,7 @@ border-radius: 15px;
   
     border: 1px solid ${colorsTheme.fontPrimaria};
     background: rgb(8,8,9);
-    background: linear-gradient(180deg, rgba(8,8,9,1) 0%, rgba(117,0,241,0.7343312324929971) 78%);
+    background: linear-gradient(180deg, rgba(8,8,9,1) 0%, rgba(16, 0, 241, 0.74) 78%);
     border-radius: 15px;
     padding: 30px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -54,6 +56,7 @@ border-radius: 15px;
     li{
         font-size: 18px;
         color: ${colorsTheme.fontPrimaria};
+        font-family: "Bebas Neue", sans-serif;
     }
 
     @media (max-width: 680px){
@@ -64,8 +67,9 @@ margin-left: 0;
 }
 
     h3{
-    font-size: 25px;
+       font-size: 25px;
        color: ${colorsTheme.fontPrimaria};
+       font-family: "Bebas Neue", sans-serif;
     }
 
   
@@ -100,9 +104,10 @@ margin-left: 0;
 export const H1Title = Styled.h1`
 font-size: 40px;
 font-weight: 400;
-font-family: "Delius Unicase", serif;
+
 color: ${colorsTheme.fontPrimaria};
 margin-top: 20px;
+font-family: "Bebas Neue", sans-serif;
 
 
 @media (max-width: 680px){
@@ -114,12 +119,100 @@ margin-left: 0;
 
 `;
 
-export const WhatsAppIconStyled = Styled(WhatsAppIcon)`
-cursor: pointer;
-color: #25D366;
-`;
+export const SectionBook = Styled.section`
+
+width: 100%;
+padding: 50px;
 
 
-export const LocationIconStyled = Styled(LocationOnIcon)`
-cursor: pointer;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+@media (max-width: 375px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @media (max-width: 414px){
+        display: flex;
+        align-items: center;
+       
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @media (max-width: 430px){
+        display: flex;
+        align-items: center;
+       
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @media (max-width: 768px){
+        display: flex;
+        align-items: center;
+       
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @media (max-width: 820px){
+        display: flex;
+        align-items: center;
+       
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px){
+        display: flex;
+        align-items: center;
+       
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    button{
+        padding: 35px;
+        border-radius: 10px;
+        border: none;   
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        background: rgb(184,182,215);
+        background: linear-gradient(180deg, rgba(184,182,215,1) 0%, rgba(170,37,246,1) 0%, rgba(171,45,244,1) 39%, rgba(79,0,255,1) 94%, rgba(34,0,255,1) 100%);
+
+        color: ${colorsTheme.fontPrimaria};
+        font-size: 28px;
+    }
+
+    &:hover button{
+        filter: brightness(1.3);
+        box-shadow: 0 0 15px rgba(98, 35, 245, 0.8);
+        transition: 0.3s ease;
+    }
+
+    &:active button{
+        background: rgb(184,182,215);
+        background: linear-gradient(180deg, rgba(184,182,215,1) 0%, rgba(170,37,246,1) 0%, rgba(171,45,244,1) 39%, rgba(79,0,255,1) 94%, rgba(34,0,255,1) 100%);
+        transition: all 0.3s ease;
+        transform: scale(0.95);
+    }
+
+
+    p{
+        color: ${colorsTheme.fontPrimaria};
+        font-size: 15px;
+        margin-top: 10px;
+        font-family: "Bebas Neue", sans-serif;
+    }
+
 `;

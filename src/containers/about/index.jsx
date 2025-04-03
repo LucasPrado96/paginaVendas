@@ -1,4 +1,5 @@
-import { Container, SectionAbout, H1Title,  } from "./styles";
+import { Container, SectionAbout, H1Title, SectionBook  } from "./styles";
+
 
 
 
@@ -101,13 +102,19 @@ export default function About() {
               </li>
             </ul>
           </div>
-
-          
-
-          
         </div>
       </SectionAbout>
-
+   
+      <SectionBook>
+            <button >
+            
+            🚀 Quero Aprender a Controlar Meu Dinheiro Agora!
+            </button>
+            <p>
+              Inscrições abertas por tempo limitado! Garanta sua vaga agora e comece
+              a transformar sua vida financeira.
+            </p>
+      </SectionBook>
       
 
   
