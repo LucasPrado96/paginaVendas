@@ -122,7 +122,7 @@ margin-left: 0;
 export const SectionBook = Styled.section`
 
 width: 100%;
-padding: 50px;
+
 
 
 display: flex;

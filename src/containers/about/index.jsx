@@ -1,5 +1,5 @@
+import ExpireOffer from "../../components/timer";
 import { Container, SectionAbout, H1Title, SectionBook  } from "./styles";
-
 
 
 
@@ -104,8 +104,11 @@ export default function About() {
           </div>
         </div>
       </SectionAbout>
+
+      <ExpireOffer></ExpireOffer>
    
       <SectionBook>
+
             <button >
             
             🚀 Quero Aprender a Controlar Meu Dinheiro Agora!
